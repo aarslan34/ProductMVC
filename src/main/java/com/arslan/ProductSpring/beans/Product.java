@@ -1,4 +1,4 @@
-package com.arslan.ProductSpring;
+package com.arslan.ProductSpring.beans;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

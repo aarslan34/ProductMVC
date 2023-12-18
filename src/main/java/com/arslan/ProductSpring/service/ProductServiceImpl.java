@@ -1,7 +1,8 @@
-package com.arslan.ProductSpring;
+package com.arslan.ProductSpring.service;
 
+import com.arslan.ProductSpring.beans.Product;
+import com.arslan.ProductSpring.dao.ProductDB;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -18,5 +19,16 @@ public class ProductServiceImpl implements ProductService{
     public List<Product> getAllProducts() {
         return db.findAll();
     }
+
+
+    @Override
+    public Product getProduct(String name) {
+        return db.findByName(name);
+    }
+
+//    @Override
+//    public Product findByName(String name) {
+//        return db.findByName(name);
+//    }
 
 }

@@ -1,6 +1,6 @@
-package com.arslan.ProductSpring;
+package com.arslan.ProductSpring.service;
 
-import org.springframework.stereotype.Component;
+import com.arslan.ProductSpring.beans.Product;
 
 import java.util.List;
 
@@ -11,6 +11,10 @@ public interface ProductService {
 
 
     public List<Product> getAllProducts();
+
+    public Product getProduct(String name);
+
+//    public Product findByName(String name);
 //    public List<Product> getAllProducts();
 //
 //    public Product getProduct(String name) ;
