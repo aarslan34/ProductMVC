@@ -13,15 +13,15 @@ public class ProductSpringApplication {
 		ApplicationContext context = SpringApplication.run(ProductSpringApplication.class, args);
 
 		//ProductServiceImpl productService = context.getBean(ProductServiceImpl.class);
-		ProductService productService = context.getBean(ProductService.class);
-
-		List<Product> products = productService.getAllProducts();
+//		ProductService productService = context.getBean(ProductService.class);
+//
+//		List<Product> products = productService.getAllProducts();
 
 		//System.out.println(products);
 
-		for(Product p : products){
-			System.out.println(p);
-		}
+//		for(Product p : products){
+//			System.out.println(p);
+//		}
 
 //		List<Product> products = productService.getAllProducts();
 	}
