@@ -26,9 +26,5 @@ public class ProductServiceImpl implements ProductService{
         return db.findByName(name);
     }
 
-//    @Override
-//    public Product findByName(String name) {
-//        return db.findByName(name);
-//    }
 
 }
